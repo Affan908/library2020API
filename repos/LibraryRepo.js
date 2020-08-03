@@ -29,7 +29,7 @@ class LibraryRepo {
   // TODO: Buat fungsi dengan nama `cariBuku` untuk mencari buku berdasarkan ID buku
   async cariBuku(id) {
     // tambahkan disini
-    return await this.model.findById(id)
+    return await this.model.findById(id);
   }
 
   // TODO: Buat fungsi `hapusBuku` untuk dapat menghapus buku dengan ID
@@ -47,7 +47,7 @@ class LibraryRepo {
 
   // Fungsi dengan nama `rubahStatusPeminjaman` untuk merubah informasi buku dengan ID
   async rubahStatusPeminjaman(id) {
-    const buku = await this.model.findById(id)
+    const buku = await this.model.findById(id);
     const query = { _id: id };
     return await this.model.findOneAndUpdate(query, { $set: { isDipinjam: !(buku.isDipinjam) } });
   }
