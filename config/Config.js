@@ -1,6 +1,6 @@
 
 module.exports = {
-  // TODO: Tambahkan konfigurasi untuk
+  // TODO: Tambahkan konfigurasi untuks
   // DB sebagai host mongoDB instance yang melihat pada environment variable `HOST`,
   //    jika environment variables tidak tersedia, makan nilai DB menjadi `localhost`
   DB: process.env.HOST ? process.env.HOST : 'localhost',

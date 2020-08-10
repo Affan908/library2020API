@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 var Schema = mongoose.Schema;
 
-/* TODO: Buat definisi skema untuk collection library disini
+/* TODO: Buat definisi skema untuk collection library disinis
  * Skema berbentuk: - judulBuku, dengan tipe String
  *                  - pengarangBuku, dengan tipe String
  *                  - genreBuku, dengan tipe String
